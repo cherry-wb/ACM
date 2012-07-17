@@ -37,12 +37,6 @@ class SubTask extends Thread {
         this.right = right;
     }
 
-    synchronized static void write_back(int x) {
-        Test.ans += x;
-        Test.ans %= mod;
-        Test.end ++;
-    }
-
     public void run() {
         // solve the problem
         int ans = 0;
@@ -50,6 +44,10 @@ class SubTask extends Thread {
             ans = (ans + i) % mod;
         }
         // write the answer back
-        write_back(ans);
+        synchronized (this) {
+            Test.ans += ans;
+            Test.ans %= mod;
+            Test.end ++;
+        }
     }
 }
