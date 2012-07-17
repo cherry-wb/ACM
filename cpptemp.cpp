@@ -1,10 +1,11 @@
 #include <cstdio>
+#include <cstring>
 
 #ifndef __SWEETHEADER
 #define __SWEETHEADER
 
 #include <iostream>
-#define debug(x) do std::cout << #x << " = " << x << "\n"
+#define debug(x) std::cerr << #x << " = " << x << "\n"
 
 #endif
 
