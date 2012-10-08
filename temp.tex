@@ -1,22 +1,24 @@
-\documentclass{article}  
+\documentclass[a4paper]{article}
+\usepackage{geometry}
 \usepackage{fontspec}
+\usepackage{listings}
+\lstset{breaklines,numbers=left,frame=shadowbox,extendedchars=false}
+\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
 \setmainfont{WenQuanYi Micro Hei}
 \begin{document}  
 \title{ACM/ICPC TEMPLATE}  
-\author{NKU -> HOT}  
-%\today  
+\author{NKU -> HOT}    
 % generates the title
 \maketitle
 % insert the table of contents
 \tableofcontents
 \section{Introduction}
-这里可以吗？
-\subsection{Subsection One}
-这里可以吗？
-\subsection{Subsection Two}
-这里可以吗？
-\subsubsection{Subsubsection of Subsection Two}
-这里可以吗？
-\subsection*{Subsection Three}
-这里可以吗？
+NKU -> HOT ACM-ICPC template \\
+Thanks all past team members! 
+\section{Utility}
+\subsection{Java Template}
+\lstinputlisting{javatemp.java}
+\subsection{Java Multithread}
+BECAREFUL: CALL START FOR EACH THREAD!
+\lstinputlisting{javaThread.java}
 \end{document}  
