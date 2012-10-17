@@ -85,7 +85,7 @@ void fft(double ir[],double ii[],int size,int mark)
 	}
 }
 
-double POW[10]={1,10,100,1000,10000,100000,1000000,10000000,100000000,1000000000};
+double POW[10] = {1,1E1,1E2,1E3,1E4,1E5,1E6,1E7,1E8,1E9};
 
 int next(char str[])
 {
